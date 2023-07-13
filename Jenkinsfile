@@ -23,7 +23,7 @@ pipeline {
             passwordVariable: 'DOCKER_USER_PASSWORD'
             ]]) {
                sh "docker tag jenkins-pipeline_web:latest hanul100/jenkins-app:${BUILD_NUMBER}"
-               sh "docker login -u hanul100 -p dckr_pat_oazSF3i-aGdIsSIeenBwdFXSVFg"
+               sh "docker login -u hanul100 -p qorgksmf98!"
                sh "docker push hanul100/jenkins-app:${BUILD_NUMBER}"
             }
          }
